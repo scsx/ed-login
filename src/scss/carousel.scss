@@ -2,6 +2,7 @@
   &__step {
     width: 66.66%;
     height: 100vh;
+    padding-bottom: 2rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -17,7 +18,13 @@
     font-size: 3rem;
 
     small {
-      font-size: 66.66%;
+      display: block;
+      font-size: 50%;
+      color: $gray-600;
     }
+  }
+
+  &__helper {
+    color: $gray-600;
   }
 }
