@@ -11,35 +11,68 @@
       <div class="loginpage__half loginpage__half--form">
         <div id="jsCarouselLogin" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active" data-slide="1">
-              <div class="step">
-                <h2 class="step__title" class="step">1. Username</h2>
-                <p class="step__helper">Write anything and press enter</p>
+            <div class="carousel-item carousel__item active" data-slide="1">
+              <div class="carousel__step">
+                <h2 class="carousel__title"><small>1. </small> Username</h2>
+                <p class="carousel__helper">Write anything and press enter</p>
                 <input
                   type="text"
-                  class="form-control step__input"
+                  class="form-control form-control-lg mb-4 step__input"
                   id="jsUsernameInput"
                   placeholder="username" />
-                <button id="jsNextFrom1" class="step__nav">Next</button>
+                <div class="row">
+                  <div class="col-md-6 offset-md-6">
+                    <button id="jsNextFrom1" class="btn btn-dark step__nav">
+                      Next
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item" data-slide="2">
-              <h2>2. Clients</h2>
-              <button data-bs-target="#jsCarouselLogin" data-bs-slide="prev">
-                Back
-              </button>
-              <button data-bs-target="#jsCarouselLogin" data-bs-slide="next">
-                Next
-              </button>
+              <div class="carousel__step">
+                <h2 class="carousel__title">
+                  <small>2. </small> Choose client
+                </h2>
+                <div class="carousel__clients">Mercedes</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <button id="jsBackFrom2" class="btn btn-outline-dark step__nav">Back</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button id="jsNextFrom2" class="btn btn-dark step__nav">Next</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel-item" data-slide="3">
-              <h2>3. Password</h2>
+              <div class="carousel__step">
+                <h2 class="carousel__title"><small>3. </small> Password</h2>
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <button id="jsBackFrom3" class="btn btn-outline-dark step__nav">Back</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button id="jsNextFrom3" class="btn btn-dark step__nav">Next</button>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="loginpage__half loginpage__half--deco">
-        LOGO
+        <div class="loginpage__brand">
+          <img src="../dist/img/logo.png" alt="XRT" class="loginpage__logo" />
+          <a
+            href="https://www.escritadigital.com/"
+            target="_blank"
+            class="btn btn-link loginpage__logoLink"
+            >by Escrita Digital</a
+          >
+        </div>
       </div>
     </div>
 

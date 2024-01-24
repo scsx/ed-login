@@ -16,4 +16,19 @@ body {
       background-color: gold;
     }
   }
+
+  &__brand {
+    margin: 3rem;
+  }
+
+  &__logo {
+    display: block;
+    width: 8rem;
+  }
+
+  &__logoLink {
+    padding: 0;
+    color: $dark;
+    text-decoration: none;
+  }
 }
