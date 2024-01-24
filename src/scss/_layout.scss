@@ -1,0 +1,19 @@
+body {
+  background-color: $bodybg;
+}
+
+.loginpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__half {
+    width: 50%;
+    height: 100vh;
+
+    &.loginpage__half--deco {
+      background-color: gold;
+    }
+  }
+}

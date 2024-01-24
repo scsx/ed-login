@@ -7,37 +7,39 @@
     <link rel="stylesheet" href="../dist/css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Hey</h1>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h2>1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem dolor libero ducimus nobis? Provident quidem, earum nihil recusandae rem eligendi dolor voluptates mollitia iusto adipisci architecto et modi eos.</p>
-          </div>
-          <div class="carousel-item">
-            <h2>2</h2>
-          </div>
-          <div class="carousel-item">
-            <h2>3</h2>
+    <div class="loginpage">
+      <div class="loginpage__half loginpage__half--form">
+        <div id="jsCarouselLogin" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-slide="1">
+              <div class="step">
+                <h2 class="step__title" class="step">1. Username</h2>
+                <p class="step__helper">Write anything and press enter</p>
+                <input
+                  type="text"
+                  class="form-control step__input"
+                  id="jsUsernameInput"
+                  placeholder="username" />
+                <button id="jsNextFrom1" class="step__nav">Next</button>
+              </div>
+            </div>
+            <div class="carousel-item" data-slide="2">
+              <h2>2. Clients</h2>
+              <button data-bs-target="#jsCarouselLogin" data-bs-slide="prev">
+                Back
+              </button>
+              <button data-bs-target="#jsCarouselLogin" data-bs-slide="next">
+                Next
+              </button>
+            </div>
+            <div class="carousel-item" data-slide="3">
+              <h2>3. Password</h2>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true">Previous</span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true">Next</span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="loginpage__half loginpage__half--deco">
+        LOGO
       </div>
     </div>
 
