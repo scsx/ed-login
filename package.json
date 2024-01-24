@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss:watch": "node-sass src/scss -o dist --watch",
-    "start": "npm run scss:watch"
+    "scss:watch": "node-sass src/scss -o dist/css --watch",
+    "copy:js": "cp src/js/app.js dist/js/",
+    "start": "npm run scss:watch & npm run copy:js"
   },
   "keywords": [],
   "author": "",
