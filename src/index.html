@@ -32,13 +32,15 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item active" data-slide="2">
+            <div class="carousel-item" data-slide="2">
               <div class="carousel__step">
                 <h2 class="carousel__title">
                   <small>2. </small> Choose client
                 </h2>
                 <p class="carousel__helper">Some have notifications</p>
-                <div class="list-group carousel__clients mb-4" id="jsClients"></div>
+                <div
+                  class="list-group carousel__clients mb-4"
+                  id="jsClients"></div>
                 <div class="row">
                   <div class="col-md-6">
                     <button
@@ -47,26 +49,23 @@
                       Back
                     </button>
                   </div>
-                  <!-- <div class="col-md-6">
-                    <button id="jsNextFrom2" class="btn btn-dark step__nav">
-                      Next
-                    </button>
-                  </div> -->
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-slide="3">
+            <div class="carousel-item active" data-slide="3">
               <div class="carousel__step">
                 <h2 class="carousel__title"><small>3. </small> Password</h2>
                 <p class="carousel__helper">
-                  Any string with a number and press enter or test error
-                  handling.
+                  Any string with a number and press 'Enter'. <br />(Use
+                  letters only and press 'Enter' to see error handling).
                 </p>
                 <input
                   type="password"
-                  class="form-control form-control-lg mb-2 step__input is-invalid"
+                  class="form-control form-control-lg mb-4 step__input"
                   id="jsPasswordInput" />
-                <div class="invalid-feedback">Please provide a valid city.</div>
+                <div class="invalid-feedback mb-4">
+                  Must have at least one number.
+                </div>
                 <div class="row">
                   <div class="col-md-6">
                     <button
