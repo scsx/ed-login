@@ -16,12 +16,17 @@
 
   &__title {
     font-size: 3rem;
+    line-height: 1.1;
 
     small {
       display: block;
       font-size: 50%;
       color: lighten(black, 50%);
     }
+  }
+
+  &__titleClientName {
+    color: dodgerblue;
   }
 
   &__helper {
