@@ -20,15 +20,39 @@
     small {
       display: block;
       font-size: 50%;
-      color: $gray-600;
+      color: lighten(black, 50%);
     }
   }
 
   &__helper {
-    color: $gray-600;
+    color: lighten(black, 50%);
   }
 
   &__clientEntry {
     display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: lighten(gold, 30%);
+
+      .carousel__clientName {
+        color: lighten(black, 20%);
+      }
+    }
+  }
+
+  &__clientLogo {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &__clientName {
+    font-size: 1.25rem;
+    color: dodgerblue;
+    flex-grow: 1;
+  }
+
+  &__clientBadge {
+    color: lighten(black, 20%);
   }
 }

@@ -46,7 +46,7 @@ body {
     background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
-    transition: opacity .7s;
+    transition: opacity 0.7s;
 
     &--step1 {
       background-image: url(../../dist/img/deco-truck.jpg);
@@ -66,8 +66,45 @@ body {
   }
 }
 
+// Rough example of post login page
 .dashboard {
   h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  &__header {
+    padding: 1rem 0;
+    background-color: white;
+    border-bottom: 1px solid lighten(black, 80%);
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin: 4rem 0 1rem 0;
+  }
+
+  &__card {
+    max-width: 50%;
+    flex-direction: row;
+
+    .card-img {
+      background-color: gold;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+      .card-img-top {
+        width: 80%;
+        margin: 10%;
+      }
+    }
+
+    .btn.btn-primary {
+      color: white;
+    }
   }
 }
