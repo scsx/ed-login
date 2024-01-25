@@ -27,4 +27,8 @@
   &__helper {
     color: $gray-600;
   }
+
+  &__clientEntry {
+    display: flex;
+  }
 }
