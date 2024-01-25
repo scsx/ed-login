@@ -11,7 +11,7 @@
       <div class="loginpage__half loginpage__half--form">
         <div id="jsCarouselLogin" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item carousel__item active" data-slide="1">
+            <div class="carousel-item carousel__item" data-slide="1">
               <div class="carousel__step">
                 <h2 class="carousel__title"><small>1. </small> Username</h2>
                 <p class="carousel__helper">Write anything and press enter</p>
@@ -22,7 +22,10 @@
                   placeholder="username" />
                 <div class="row">
                   <div class="col-md-6">
-                    <button id="jsNextFrom1" class="btn btn-dark step__nav">
+                    <button
+                      id="jsNextFrom1"
+                      class="btn btn-dark step__nav"
+                      disabled>
                       Next
                     </button>
                   </div>
@@ -51,11 +54,12 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-slide="3">
+            <div class="carousel-item active" data-slide="3">
               <div class="carousel__step">
                 <h2 class="carousel__title"><small>3. </small> Password</h2>
                 <p class="carousel__helper">
-                  Anything with a number and press enter or try to see error handling.
+                  Any string with a number and press enter or test error
+                  handling.
                 </p>
                 <input
                   type="password"
@@ -70,7 +74,10 @@
                     </button>
                   </div>
                   <div class="col-md-6">
-                    <button id="jsNextFrom3" class="btn btn-dark step__nav">
+                    <button
+                      id="jsNextFrom3"
+                      class="btn btn-dark step__nav"
+                      disabled>
                       Next
                     </button>
                   </div>
@@ -90,9 +97,12 @@
             >by Escrita Digital</a
           >
         </div>
-        <div class="loginpage__deco loginpage__deco--step1 active"></div>
-        <div class="loginpage__deco loginpage__deco--step2"></div>
-        <div class="loginpage__deco loginpage__deco--step3"></div>
+        <div
+          class="loginpage__deco loginpage__deco--step1 jsDeco jsDeco-1 active"></div>
+        <div
+          class="loginpage__deco loginpage__deco--step2 jsDeco jsDeco-2"></div>
+        <div
+          class="loginpage__deco loginpage__deco--step3 jsDeco jsDeco-3"></div>
       </div>
     </div>
 
